@@ -50,9 +50,16 @@ body {
     border-bottom: 1.5px solid rgb(163, 163, 163);
 }
 
+hr.rounded {
+    width: 75%;
+    margin-top: 3em;
+    border-top: 4px solid rgb(32, 128, 192);
+    border-radius: 5px;
+}
+
 /* Jadwal KRS Section */
 .div-jadwal-krs {
-    margin: 1em 16em 2em;
+    margin: 0 16em 2em;
 }
 
 .table-jadwal-krs {
