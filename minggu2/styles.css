@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.biodata {
+    color: rgb(8, 173, 214);
+    text-align: center;
+}
+
+.row-biodata {
+    box-sizing: border-box;
+}
+
+.row-biodata-column {
+    overflow-x: auto;
+}
+
+.row-biodata:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.td-top {
+    border-top: 4px solid rgb(32, 128, 192); 
+    border-bottom: 1.5px solid rgb(163, 163, 163);
+}
+
+.td-top-separator {
+    text-align: center; 
+    border-top: 4px solid rgb(32, 128, 192); 
+    border-bottom: 1.5px solid rgb(163, 163, 163);
+}
+
+.td-bottom {
+    border-bottom: 1.5px solid rgb(163, 163, 163);
+}
+
+.td-bottom-separator {
+    text-align: center;
+    border-bottom: 1.5px solid rgb(163, 163, 163);
+}
+
+/* Jadwal KRS Section */
+.div-jadwal-krs {
+    margin: 1em 16em 2em;
+}
+
+.table-jadwal-krs {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.table-jadwal-krs-top {
+    background-color: rgb(0, 119, 255); 
+    color: white; 
+    font-weight: 700;
+    padding-top: 10;
+}
+
+.table-jadwal-krs-top td {
+    padding: 20px 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-spacing: 0;
+}
+
+.isi-jadwal td {
+    padding: 20px 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-spacing: 0;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 980px) {
+    .row-biodata-column {
+        overflow-x: auto;
+        margin: 0 8em 0
+    }
+
+    .div-jadwal-krs {
+        margin: 1em 8em 2em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row-biodata-column {
+        overflow-x: auto;
+        margin: 0 4em 0
+    }
+
+    .div-jadwal-krs {
+        margin: 1em 4em 2em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .div-jadwal-krs {
+        margin: 1em 2em 2em;
+    }
+}
