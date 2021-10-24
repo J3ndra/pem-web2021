@@ -18,7 +18,7 @@
                 <tr>
                     <td rowspan="10" align="center">
                         <img src="https://i.ibb.co/C6j9QGS/cocard-foto-jadi-resize.png" width="210" height="313"
-                            style="object-fit: cover;" loading="lazy" alt="me"/>
+                            style="object-fit: cover;" loading="lazy" alt="me" />
                     </td>
                     <td class="td-top">Nama</td>
                     <td class="td-top-separator">:</td>
@@ -67,7 +67,7 @@
             </table>
         </div>
     </div>
-    <hr class="rounded"/>
+    <hr class="rounded" />
     <div class="div-jadwal-krs">
         <h1>Jadwal KRS</h1>
         <div style="overflow-x: auto;">
@@ -140,5 +140,12 @@
         </div>
     </div>
 </body>
+<script>
+    const bars = document.getElementById('bars');
+    const mobileMenu = document.getElementById('mobileMenu');
+    bars.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active')
+    })
+</script>
 
 </html>

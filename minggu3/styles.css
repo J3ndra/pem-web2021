@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.h1-header {
+    margin-top: 1em;
+    color: rgb(8, 173, 214);
+    text-align: center;
+}
+
+/* HEADER */
+.header{
+    background-color: #3E6EB0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+/* BIODATA */
+
+
+
+.row-biodata {
+    margin: 1em 34em 2em;
+}
+
+.row-biodata-column {
+    overflow-x: auto;
+}
+
+.row-biodata:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.td-top {
+    border-top: 4px solid rgb(32, 128, 192); 
+    border-bottom: 1.5px solid rgb(163, 163, 163);
+}
+
+.td-top-separator {
+    text-align: center; 
+    border-top: 4px solid rgb(32, 128, 192); 
+    border-bottom: 1.5px solid rgb(163, 163, 163);
+}
+
+.td-bottom {
+    border-bottom: 1.5px solid rgb(163, 163, 163);
+}
+
+.td-bottom-separator {
+    text-align: center;
+    border-bottom: 1.5px solid rgb(163, 163, 163);
+}
+
+hr.rounded {
+    width: 75%;
+    margin: 1em 0 1em;
+    border-top: 4px solid rgb(32, 128, 192);
+    border-radius: 5px;
+    align-self: center;
+}
+
+/* Jadwal KRS Section */
+.div-jadwal-krs {
+    margin: 0 16em 2em;
+}
+
+.table-jadwal-krs {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.table-jadwal-krs-top {
+    background-color: rgb(0, 119, 255); 
+    color: white; 
+    font-weight: 700;
+    padding-top: 10;
+}
+
+.table-jadwal-krs-top td {
+    padding: 20px 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-spacing: 0;
+}
+
+.isi-jadwal td {
+    padding: 20px 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-spacing: 0;
+}
+
+/* DIV VIDEO */
+.div-video {
+    margin: 1em 38em 2em;
+}
+
+/* DIV MUSIC */
+.div-music {
+    margin: 1em 50em 2em;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 1200px) {
+    .row-biodata {
+        margin: 1em 8em 2em;
+    }
+
+    .div-jadwal-krs {
+        margin: 1em 8em 2em;
+    }
+
+    .div-video {
+        margin: 1em 8em 2em;
+    }
+
+    .div-music {
+        margin: 1em 20em 2em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* HEADER */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #3E6EB0;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /**********/
+
+    .row-biodata {
+        margin: 1em 4em 2em;
+    }
+
+    .div-jadwal-krs {
+        margin: 1em 4em 2em;
+    }
+
+    .div-video {
+        margin: 1em 4em 2em;
+    }
+
+    .div-music {
+        margin: 1em 6em 2em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .row-biodata {
+        margin: 1em 2em 2em;
+    }
+
+    .div-jadwal-krs {
+        margin: 1em 2em 2em;
+    }
+
+    .div-video {
+        margin: 1em 2em 2em;
+    }
+}
