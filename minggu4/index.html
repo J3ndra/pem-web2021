@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h3>INFO PENDAFTARAN</h3>
+    <form>
+      <div class="content">
+        <table class="table-form" border="0" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="20%"><label for="nama">NISN</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Asal Sekolah</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td><label for="tempat_lahir">Tahun Lulus</label></td>
+            <td><select class="bear-years"></select></td>
+            <td><label>Lampiran foto ijazah</label></td>
+            <td>
+              <input type="file" id="myfile" name="myfile">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+
+    <h3>DATA CALON PESERTA</h3>
+    <form>
+      <div class="content">
+        <table class="table-form" border="0" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="20%"><label for="nama">Nama Lengkap</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">NIK</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td><label for="tempat_lahir">Tempat Lahir</label></td>
+            <td><input name="tempat_lahir" id="tempat_lahir" type="text" class="form"></td>
+            <td><label>Tanggal Lahir</label></td>
+            <td>
+              <select class="bear-dates"></select>
+              <select class="bear-months"></select>
+              <select class="bear-years"></select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Akte Kelahiran</label></td>
+            <td>
+              <input type="file" id="myfile" name="myfile">
+            </td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Jenis Kelamin</label></td>
+            <td>
+              <select>
+                <option>Pria</option>
+                <option>Wanita</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Alamat</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Desa/Kel</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Kecamatan</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Kabupaten</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Provinsi</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Email Aktif</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+        </table>
+      </div>
+    </form>
+
+    <h3>DATA ORANG TUA</h3>
+    <form>
+      <div class="content">
+        <table class="table-form" border="0" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="20%"><label for="nama">Nomor Kartua Keluarga</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Nama Ayah Kandung</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Agama</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Pekerjaan</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Nama Ibu Kandung</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Agama</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Pekerjaan</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Alamat Orang Tua</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Desa/Kel</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Kecamatan</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Kabupaten</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+          <tr>
+            <td width="20%"><label for="nama">Provinsi</label></td>
+            <td colspan="3"><input class="form"></td>
+          </tr>
+        </table>
+      </div>
+    </form>
+    <button name="submit" type="submit" id="contact-submit">Simpan</button>
+  </div>
+
+  <script src="calender.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    dates('option');
+    months('option');
+    years('option', 1999, 2021);
+  </script>
+</body>
+
+</html>
